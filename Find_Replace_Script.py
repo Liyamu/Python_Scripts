@@ -20,6 +20,6 @@ def findMatches( filePath, regex, flags=0):
         else:
             print(str(num_matches) + " matches found.")
 
-wksp = r"D:\Liam\Python_Workspace\Scratch\test4.txt"
+wksp = r"C:\path\to\file.txt"
 
 findMatches(wksp, "dog")
