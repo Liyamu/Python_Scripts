@@ -37,13 +37,13 @@ from arcpy import env
 from arcpy import mapping
 
 # Set environment settings
-wksp = r"D:\Liam\Python_Workspace\Scratch"
-wksp = env.workspace = r"D:\Liam\Python_Workspace\Scratch\Python_Scratch.gdb"
+wksp = r"C:\Path\to\folder"
+wksp = env.workspace = r"C:\path\to\geodatabase.gdb"
 arcpy.env.overwriteOutput = True
 
 # Define Input, output
-mxd = r"Q:/Survey/Liam/PROJECTS/012_RossBeyer_PamMatthews_Drive_Maps_14_Locations/MXDs/Map_1_Bloomington_IN.mxd"
-OutputPolygon = r"Q:\GIS\Projects\Special Projects\Drive Maps\Ann Ossege\Bloomington_IN\Data\SHP\Bloom.shp"
+mxd = r"C:\path\to\input\map_file.mxd"
+OutputPolygon = r"C:\path\to\create\new_polygon.shp"
 
 def Extent_to_Polygon( mxd, OutputPolygon, WKT="WGS_1984" ):
     """
