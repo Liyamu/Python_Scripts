@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Dec 10 21:45:21 2018
-Function: Filenames Sniffer
+Function: Filename Sniffer
 Description:  This function looks at all of the files in a given workspace, 
 and outputs a dictionary containing lists of all of the files (as strings), 
 sorted into the following categories:
@@ -21,7 +21,7 @@ The function will also 'sniff' files 1 subfolder level down.
 Example of function in use use:
     
     
-    wksp = r"C:\Users\The Beast\Desktop\Python"
+    wksp = r"C:\path\to\folder"
     dict = {}
     
     dict = FileSniffer(wksp)
@@ -85,7 +85,7 @@ def FileSniffer(workspace):
     FilesDict["other"]= otherLST
     return FilesDict
 
-wksp = r"Q:\Survey\Tyler S"
+wksp = r"Q:\path\to\folder"
 dict = {}
 
 dict = FileSniffer(wksp)
